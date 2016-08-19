@@ -17,7 +17,7 @@ graphite:
 #    volumes:
 #        - "/data/statsd:/etc/statsd"
 #    links:
-        - graphite
+#        - graphite
 
 grafana:
     image: grafana/grafana
