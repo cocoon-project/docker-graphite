@@ -8,16 +8,16 @@ graphite:
     volumes:
         - "/data/graphite:/opt/graphite/storage/whisper"
 
-statsd:
-    build: statsd
-    restart: always
-    ports:
-        - "8125:8125/udp"
-        - "8126:8126"
-    volumes:
-        - "/data/statsd:/etc/statsd"
-    links:
-        - graphite
+#statsd:
+#    build: statsd
+#    restart: always
+#    ports:
+#        - "8125:8125/udp"
+#        - "8126:8126"
+#    volumes:
+#        - "/data/statsd:/etc/statsd"
+#    links:
+#        - graphite
 
 grafana:
     image: grafana/grafana
